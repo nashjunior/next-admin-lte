@@ -33,6 +33,7 @@
     "no-unused-expressions": "off",
     "react/jsx-curly-newline": "off",
     "no-nested-ternary": "off",
+    "react/react-in-jsx-scope": "off",
     "@typescript-eslint/interface-name-prefix": "off",
     "@typescript-eslint/naming-convention": [
       "error",
