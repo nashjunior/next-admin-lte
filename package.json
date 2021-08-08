@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "jest",
+    "test:watch": "yarn jest --watch"
   },
   "lint-staged": {
     "src/**/*": [
@@ -15,6 +17,7 @@
     ]
   },
   "dependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
     "next": "11.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2"
@@ -23,9 +26,11 @@
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
     "@babel/preset-typescript": "^7.15.0",
+    "@testing-library/react": "^12.0.0",
     "@types/jest": "^26.0.24",
     "@types/react": "17.0.16",
-    "@typescript-eslint/eslint-plugin": "^4.29.0",
+    "@typescript-eslint/eslint-plugin": "4.0.1",
+    "@typescript-eslint/parser": "4.0.1",
     "babel-jest": "^27.0.6",
     "eslint": "7.32.0",
     "eslint-config-airbnb": "^18.2.1",
