@@ -14,7 +14,7 @@ const Main: React.FC = () => {
       </Styles.Description>
 
       <Styles.Illustration
-        src="img/helo-illustration.svg"
+        src="/img/heroIllustration.svg"
         alt="Um desenvolvedor de frente para a tela com código"
       />
     </Styles.Wrapper>
