@@ -10,28 +10,71 @@ describe('<Main />', () => {
     ).toBeInTheDocument();
 
     expect(container.firstChild).toMatchInlineSnapshot(`
+.c0 {
+  background-color: #06092b;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 3rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  width: 25rem;
+  margin-bottom: 2rem;
+}
+
+.c2 {
+  font-size: 2.5rem;
+}
+
+.c3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.c4 {
+  margin-top: 3rem;
+  width: min(30rem,100%);
+}
+
 <main
-  class="styles__Wrapper-sc-dzx1ao-0 ljMswT"
+  class="c0"
 >
   <img
     alt="Imagem de um átomo e React Avançado escrito ao lado"
-    class="styles__Logo-sc-dzx1ao-1 kYFAEE"
+    class="c1"
     src="/img/logo.svg"
   />
   <h1
-    class="styles__Title-sc-dzx1ao-2 hhieHe"
+    class="c2"
   >
     React Avançado
   </h1>
   <h2
-    class="styles__Description-sc-dzx1ao-3 gLnIGp"
+    class="c3"
   >
     Typscript, ReactJS, NextJS, Styled Components
   </h2>
   <img
     alt="Um desenvolvedor de frente para a tela com código"
-    class="styles__Illustration-sc-dzx1ao-4 kavQjQ"
-    src="img/helo-illustration.svg"
+    class="c4"
+    src="/img/heroIllustration.svg"
   />
 </main>
 `);

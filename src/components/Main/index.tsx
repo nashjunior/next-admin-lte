@@ -1,17 +1,23 @@
 import React from 'react';
 import * as Styles from './styles';
 
-const Main: React.FC = () => {
+type IMainProps = {
+  title?: string;
+  description?: string;
+};
+
+const Main: React.FC<IMainProps> = ({
+  title = 'React Avançado',
+  description = 'Typscript, ReactJS, NextJS, Styled Components',
+}) => {
   return (
     <Styles.Wrapper>
       <Styles.Logo
         src="/img/logo.svg"
         alt="Imagem de um átomo e React Avançado escrito ao lado"
       />
-      <Styles.Title>React Avançado</Styles.Title>
-      <Styles.Description>
-        Typscript, ReactJS, NextJS, Styled Components
-      </Styles.Description>
+      <Styles.Title>{title}</Styles.Title>
+      <Styles.Description>{description}</Styles.Description>
 
       <Styles.Illustration
         src="/img/heroIllustration.svg"
