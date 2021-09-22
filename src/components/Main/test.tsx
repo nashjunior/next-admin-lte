@@ -76,6 +76,11 @@ describe('<Main />', () => {
     class="c4"
     src="/img/heroIllustration.svg"
   />
+  <a
+    href="/home"
+  >
+    Home
+  </a>
 </main>
 `);
   });
@@ -86,5 +91,12 @@ describe('<Main />', () => {
     expect(container.firstChild).toHaveStyle({
       'background-color': '#06092b',
     });
+  });
+
+  test('should render link anchor', async () => {
+    const { getByRole } = render(<Main />);
+    const link = getByRole('link');
+
+    expect(link).toHaveAttribute('href', '/home');
   });
 });
